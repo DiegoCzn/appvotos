@@ -1,0 +1,44 @@
+.header{
+    height: 100px;
+    background: #e6e6e6 ;
+    position: relative;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.5);
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(
+        to right, 
+        #f8cc06 0%, 
+        #f8cc06 12.5%, 
+        #f4b215 12.5%, 
+        #f4b215 25%, 
+        #ed7023 25%, 
+        #ed7023 37.5%, 
+        #e52227 37.5%, 
+        #e52227 50%, 
+        #b61b85 50%, 
+        #b61b85 62.5%, 
+        #952580 62.5%, 
+        #952580 75%, 
+        #4b4986 75%, 
+        #4b4986 87.5%, 
+        #33bdd9 87.5%, 
+        #33bdd9 100%);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
