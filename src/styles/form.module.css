@@ -32,15 +32,11 @@
     flex-direction: column;
     row-gap: 10px;
 }
-
-.agrupacionContainer{
-    height: 100%;
-    width: 100%;
-    background-color: #f3f3f3;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 10px 9px 19px -11px rgba(0,0,0,0.75);
-    
+.boxFormInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .dataAgrupacionContainer{
@@ -51,8 +47,12 @@
 }
 
 .n{
-    text-align: left;
-    margin-bottom: 5px;
+    /* text-align: left;
+    margin-bottom: 5px; */
+    position: relative;
+    right: 120px;
+    bottom: 8px;
+    
 }
 
 .votosContainer{
@@ -62,28 +62,90 @@
     row-gap: 10px;
 }
 
-.dataVotosContainer{
+.boxForm{
     height: 100%;
     width: 100%;
     background-color: #f3f3f3;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 10px 9px 19px -11px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .totalVotosContainer{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
     margin-top: 25px;
     display: flex;
     flex-direction: row;
-    row-gap: 10px;
     height: 100%;
     width: 100%;
     background-color: #f3f3f3;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
     box-shadow: 10px 9px 19px -11px rgba(0,0,0,0.75);
+}
+
+.totalVotosContainer::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(
+        to right, 
+        #f8cc06 0%, 
+        #f8cc06 12.5%, 
+        #f4b215 12.5%, 
+        #f4b215 25%, 
+        #ed7023 25%, 
+        #ed7023 37.5%, 
+        #e52227 37.5%, 
+        #e52227 50%, 
+        #b61b85 50%, 
+        #b61b85 62.5%, 
+        #952580 62.5%, 
+        #952580 75%, 
+        #4b4986 75%, 
+        #4b4986 87.5%, 
+        #33bdd9 87.5%, 
+        #33bdd9 100%);
 }
 
 .totalVotos{
     margin-left: 20px;
+}
+
+.labelStyle{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.inputStyle{
+    width: 225px;
+    height: 35px;
+    border: 1px solid black ;
+    border-radius: 8px;
+}
+
+input[type=text]{
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+input[type=submit]{
+    height: 40px;
+    border: none;
+    background-color: #f8cc06;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 20px;
 }

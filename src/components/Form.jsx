@@ -21,82 +21,66 @@ const Form = () => {
 
         <form action="">
             <div className={styles.agrupacionesContainer}>
-                <div className={styles.agrupacionContainer}>
+                <div className={styles.boxForm}>
                     <div className={styles.dataAgrupacionContainer}>
                         <p className={styles.n}>501</p>
                         <p className={styles.agrupacion}>FRENTE DE TODOS</p>
                     </div>
-                    <div className={styles.votosAgrupacionContainer}>
-                        <label htmlFor="">Cantidad de votos obtenidos</label>
-                        <input type="number"/>
+                    <div className={styles.boxFormInput}>
+                        <label htmlFor="" className={styles.labelStyle}>Cantidad de votos obtenidos</label>
+                        <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                     </div>
                 </div>
 
-                <div className={styles.agrupacionContainer}>
+                <div className={styles.boxForm}>
                     <div className={styles.dataAgrupacionContainer}>
                         <p className={styles.n}>502</p>
                         <p className={styles.agrupacion}>FRENTE CAMBIA JUJUY</p>
                     </div>
-                    <div className={styles.votosAgrupacionContainer}>
-                        <label htmlFor="">Cantidad de votos obtenidos</label>
-                        <input type="number"/>
+                    <div className={styles.boxFormInput}>
+                        <label htmlFor="" className={styles.labelStyle}>Cantidad de votos obtenidos</label>
+                        <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                     </div>
                 </div>
 
-                <div className={styles.agrupacionContainer}>
+                <div className={styles.boxForm}>
                     <div className={styles.dataAgrupacionContainer}>
                         <p className={styles.n}>503</p>
                         <p className={styles.agrupacion}>FRENTE DE IZQUIERDA Y DE TRABJADORES-UNIDAD</p>
                     </div>
-                    <div className={styles.votosAgrupacionContainer}>
-                        <label htmlFor="">Cantidad de votos obtenidos</label>
-                        <input type="number"/>
+                    <div className={styles.boxFormInput}>
+                        <label htmlFor="" className={styles.labelStyle}>Cantidad de votos obtenidos</label>
+                        <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                     </div>
                 </div>
-            </div>
 
-            <div className={styles.votosContainer}>
-                <div className={styles.dataVotosContainer}>
-                    <label>VOTOS NULOS</label>
-                    <input type="number"/>
+            {/* <div className={styles.votosContainer}> */}
+                <div className={styles.boxForm}>
+                    <label className={styles.labelStyle}>Votos Nulos</label>
+                    <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                 </div>
-                <div className={styles.dataVotosContainer}>
-                    <label>VOTOS RECURRIDOS</label>
-                    <input type="number"/>
+                <div className={styles.boxForm}>
+                    <label className={styles.labelStyle}>Votos Recurridos</label>
+                    <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                 </div>
-                <div className={styles.dataVotosContainer}>
-                    <label>VOTOS DE IDENTIDAD IMPUGNADA</label>
-                    <input type="number"/>
+                <div className={styles.boxForm}>
+                    <label className={styles.labelStyle}>Votos de Identidad Impugnada</label>
+                    <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                 </div>
-                <div className={styles.dataVotosContainer}>
-                    <label>VOTOS EN BLANCO</label>
-                    <input type="number"/>
+                <div className={styles.boxForm}>
+                    <label className={styles.labelStyle}>Votos en Blanco</label>
+                    <input type="text" className={styles.inputStyle} placeholder="Cantidad de Votos"/>
                 </div>
-            </div>
+            {/* </div> */}
 
-            
+                <input type="submit"/>
+            </div>
         </form>
-        
+
         <div className={styles.totalVotosContainer}>
             <p>TOTAL DE VOTOS</p>
             <p className={styles.totalVotos}>9102</p>
         </div>
-{/* 
-        <div>
-            <div>
-                <p>
-                    Agrupaciones
-                </p>
-            </div>
-            <div>
-                <p>
-
-                </p>
-            </div>
-            <form action="">
-                <label htmlFor=""></label>
-            </form>
-        </div> */}
     </>
   )
 }
