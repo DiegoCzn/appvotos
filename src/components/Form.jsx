@@ -1,23 +1,40 @@
 import React from 'react'
+import styles from '../styles/form.module.css'
 
 const Form = () => {
   return (
-    <div>
-        <div>
-            <div>
-                <p>Seccion:{' '}<span>0002-Palpalá</span></p>
-                <p>Municipio:{' '}<span>Palpalá</span></p>
-                <p>Circuito:{' '}<span>22-Palpalá</span></p>
-                <p>Mesa:{' '}<span>68</span></p>
-                <p>Escuela:{' '}<span>Sagrado Corazón</span></p>
+    <>
+        <div className={styles.container}>
+            <div className={styles.dataContainer}>
+                <p className={styles.text}>Seccion:{' '}<span className={styles.textData}>0002-Palpalá</span></p>
+                <p className={styles.text}>Municipio:{' '}<span className={styles.textData}>Palpalá</span></p>
+                <p className={styles.text}>Circuito:{' '}<span className={styles.textData}>22-Palpalá</span></p>
+                <p className={styles.text}>Mesa:{' '}<span className={styles.textData}>68</span></p>
+                <p className={styles.text}>Escuela:{' '}<span className={styles.textData}>Sagrado Corazón</span></p>
             </div>
-            <div>
-                <p>Cantidad de votantes:{' '}<span>912</span></p>
-                <p>Cantidad de sobres utilizados:{' '}<span>912</span></p>
-                <p>Resultado de la resta:{' '}<span>0</span></p>
+            <div className={styles.dataContainer}>
+                <p className={styles.text}>Cantidad de votantes:{' '}<span className={styles.textData}>912</span></p>
+                <p className={styles.text}>Cantidad de sobres utilizados:{' '}<span className={styles.textData}>912</span></p>
+                <p className={styles.text}>Resultado de la resta:{' '}<span className={styles.textData}>0</span></p>
             </div>
         </div>
-    </div>
+{/* 
+        <div>
+            <div>
+                <p>
+                    Agrupaciones
+                </p>
+            </div>
+            <div>
+                <p>
+
+                </p>
+            </div>
+            <form action="">
+                <label htmlFor=""></label>
+            </form>
+        </div> */}
+    </>
   )
 }
 

@@ -1,11 +1,11 @@
 .header{
     height: 100px;
-    background: #e6e6e6 ;
+    background-color: #f3f3f3;
     position: relative;
     padding: 10px 25px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.5);
 }
 
 .header::after{
