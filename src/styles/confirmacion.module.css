@@ -1,0 +1,68 @@
+.container{
+    text-align: center;
+    background-color: #f0f0f0;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.5);
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(
+        to right, 
+        #f8cc06 0%, 
+        #f8cc06 12.5%, 
+        #f4b215 12.5%, 
+        #f4b215 25%, 
+        #ed7023 25%, 
+        #ed7023 37.5%, 
+        #e52227 37.5%, 
+        #e52227 50%, 
+        #b61b85 50%, 
+        #b61b85 62.5%, 
+        #952580 62.5%, 
+        #952580 75%, 
+        #4b4986 75%, 
+        #4b4986 87.5%, 
+        #33bdd9 87.5%, 
+        #33bdd9 100%);
+}
+
+.titulo{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.dataFiscal{
+    margin-bottom: 20px;
+}
+
+.dataFiscal p{
+    font-weight: bold;
+}
+
+.dataFiscal span{
+    font-weight: 500;
+}
+
+
+.containerFormulario{
+    margin-bottom: 20px;
+}
+
+.containerFormulario p{
+    font-size: 20px;
+}
+
