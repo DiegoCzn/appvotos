@@ -4,6 +4,7 @@ import Layout from './pages/Layout'
 import Login from './pages/Login'
 import FormPage from './pages/FormPage'
 import Confirmacion from './pages/confirmacion'
+import Identificacion from './pages/Identificacion'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Login/>
+        element: <Identificacion/>
 
       },
       {
@@ -20,10 +21,11 @@ const router = createBrowserRouter([
         element: <FormPage/>,
       },
       {
-        path: "/formulario/identificacion"
+        path: "/formulario/identificacion",
+        element: <Identificacion/>
       },
       {
-        path: "/confirmacion",
+        path: "/formulario/confirmacion",
         element: <Confirmacion/>
       },
     ]
