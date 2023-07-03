@@ -12,11 +12,7 @@ const Form = () => {
                 <p className={styles.text}>Mesa:{' '}<span className={styles.textData}>68</span></p>
                 <p className={styles.text}>Escuela:{' '}<span className={styles.textData}>Sagrado Corazón</span></p>
             </div>
-            <div className={styles.dataContainer}>
-                <p className={styles.text}>Cantidad de votantes:{' '}<span className={styles.textData}>912</span></p>
-                <p className={styles.text}>Cantidad de sobres utilizados:{' '}<span className={styles.textData}>912</span></p>
-                <p className={styles.text}>Resultado de la resta:{' '}<span className={styles.textData}>0</span></p>
-            </div>
+
         </div>
 
         <form action="">
@@ -77,9 +73,15 @@ const Form = () => {
             </div>
         </form>
 
+        
+        {/* <div className={styles.dataContainer}>
+                <p className={styles.text}>Cantidad de votantes:{' '}<span className={styles.textData}>912</span></p>
+        </div> */}
         <div className={styles.totalVotosContainer}>
-            <p>TOTAL DE VOTOS</p>
-            <p className={styles.totalVotos}>9102</p>
+            <p className={styles.text}>Total de votos:{' '}<span className={styles.totalVotos}>0</span></p>
+            
+            <p className={styles.text}>Cantidad de sobres utilizados:{' '}<span className={styles.textData}>0</span></p>
+            <p className={styles.text}>Resultado de la resta:{' '}<span className={styles.textData}>0</span></p>
         </div>
     </>
   )
