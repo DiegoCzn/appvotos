@@ -2,9 +2,9 @@ import Form from "../components/Form"
 
 const FormPage = () => {
   return (
-    <div>
+
       <Form></Form>        
-    </div>
+    
   )
 }
 

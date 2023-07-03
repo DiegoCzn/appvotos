@@ -5,6 +5,7 @@
 }
 
 .dataContainer{
+    margin-top: 20px;
     height: 100%;
     width: 100%;
     background-color: #f3f3f3;
@@ -76,13 +77,14 @@
 }
 
 .totalVotosContainer{
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
     z-index: 1;
     margin-top: 25px;
     display: flex;
-    flex-direction: row;
-    height: 100%;
+    flex-direction: column;
+    /* height: 100%; */
     width: 100%;
     background-color: #f3f3f3;
     padding: 15px;
