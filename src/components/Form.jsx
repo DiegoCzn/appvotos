@@ -9,9 +9,19 @@ const FormVotos = () => {
     const fiscal = location.state
 
     const [votos, setVotos] = useState({
-        votosFrenteTodos: 0,
-        votosFrenteCambiaJujuy: 0,
-        votosFrenteIzquierda: 0,
+        votosJxCBulrrich: 0,
+        votosJxCLarreta: 0,
+        votosUPMassa: 0,
+        votosUPGrabois: 0,
+        votosLibertadMilei: 0,
+        votosHacemosSchiarretti: 0,
+        votosFrenteDeIzquierdaBregman: 0,
+        votosFrenteDeIzquierdaSolano: 0,
+        votosMasCastañeira: 0,
+        votosPoliticaObreraRamal: 0,
+        votosLibreEscobar: 0,
+        votosValoresMoreno: 0,
+        votosFrentePatriotaBiondini:0,
         votosNulos: 0,
         votosRecurridos: 0,
         votosIdentidadImpugnada: 0,
@@ -72,13 +82,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>JxC Bullrich</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteTodos" className={styles.labelStyle}>
+                            <label htmlFor="votosJxCBulrrich" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteTodos"
-                                name="votosFrenteTodos"
+                                id="votosJxCBulrrich"
+                                name="votosJxCBulrrich"
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
                                 placeholder="0"
@@ -92,13 +102,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>JxC Larreta</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteCambiaJujuy" className={styles.labelStyle}>
+                            <label htmlFor="votosJxCLarreta" className={styles.labelStyle}>
                             Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteCambiaJujuy"
-                                name="votosFrenteCambiaJujuy"
+                                id="votosJxCLarreta"
+                                name="votosJxCLarreta"
                                 // value={votos.votosFrenteCambiaJujuy}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -113,13 +123,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>UP Massa</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosUPMassa" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosUPMassa"
+                                name="votosUPMassa"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -134,13 +144,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>UP Grabois</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosUPGrabois" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosUPGrabois"
+                                name="votosUPGrabois"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -155,13 +165,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Libertad Milei</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosLibertadMilei" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosLibertadMilei"
+                                name="votosLibertadMilei"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -176,13 +186,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Hacemos Schiaretti</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosHacemosSchiarretti" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosHacemosSchiarretti"
+                                name="votosHacemosSchiarretti"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -197,13 +207,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Frente de Izquierda Bregman</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosFrenteDeIzquierdaBregman" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosFrenteDeIzquierdaBregman"
+                                name="votosFrenteDeIzquierdaBregman"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -218,13 +228,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Frente de Izquierda Solano</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosFrenteDeIzquierdaSolano" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosFrenteDeIzquierdaSolano"
+                                name="votosFrenteDeIzquierdaSolano"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -239,13 +249,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Mas Castañeira</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosMasCastañeira" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosMasCastañeira"
+                                name="votosMasCastañeira"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -260,13 +270,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Política Obrera Ramal</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosPoliticaObreraRamal" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosPoliticaObreraRamal"
+                                name="votosPoliticaObreraRamal"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -281,13 +291,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Libres Escobar</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosLibreEscobar" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosLibreEscobar"
+                                name="votosLibreEscobar"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -302,13 +312,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Valores Moreno</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosValoresMoreno" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosValoresMoreno"
+                                name="votosValoresMoreno"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -323,13 +333,13 @@ const FormVotos = () => {
                             <p className={styles.agrupacion}>Frente Patriota Biondini</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                            <label htmlFor="votosFrentePatriotaBiondini" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteIzquierda"
-                                name="votosFrenteIzquierda"
+                                id="votosFrentePatriotaBiondini"
+                                name="votosFrentePatriotaBiondini"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
