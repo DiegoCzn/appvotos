@@ -5,7 +5,7 @@
 }
 
 .dataContainer{
-    margin-top: 20px;
+    margin-top: 10px;
     height: 100%;
     width: 100%;
     background-color: #f3f3f3;
@@ -44,7 +44,6 @@
     text-align: center;
     padding-bottom: 20px;
     font-weight: bolder;
-
 }
 
 .n{
@@ -144,10 +143,31 @@ input[type=text]{
 
 input[type=submit]{
     height: 40px;
+    width: 100%;
     border: none;
     background-color: #f8cc06;
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 8px;
     margin-top: 20px;
+    margin-bottom: 120px;
+    box-shadow: 10px 9px 19px -11px rgba(0,0,0,0.75);
+}
+
+@media (min-width: 400px){
+    .agrupacionesContainer{
+        align-items: center;
+    }
+    .boxForm{
+        width: 400px;
+    }
+    .dataContainer{
+        width: 370px;
+    }
+    .totalVotosContainer{
+        align-items: center;
+    }
+    input[type=submit]{
+        width: 370px;
+    }
 }
