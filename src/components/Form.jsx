@@ -68,8 +68,8 @@ const FormVotos = () => {
                 <div className={styles.agrupacionesContainer}>
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
-                            <p className={styles.n}>501</p>
-                            <p className={styles.agrupacion}>FRENTE DE TODOS</p>
+                            {/* <p className={styles.n}>N Lista</p> */}
+                            <p className={styles.agrupacion}>JxC Bullrich</p>
                         </div>
                         <div className={styles.boxFormInput}>
                             <label htmlFor="votosFrenteTodos" className={styles.labelStyle}>
@@ -88,8 +88,8 @@ const FormVotos = () => {
             
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
-                            <p className={styles.n}>502</p>
-                            <p className={styles.agrupacion}>FRENTE CAMBIA JUJUY</p>
+                            {/* <p className={styles.n}>502</p> */}
+                            <p className={styles.agrupacion}>JxC Larreta</p>
                         </div>
                         <div className={styles.boxFormInput}>
                             <label htmlFor="votosFrenteCambiaJujuy" className={styles.labelStyle}>
@@ -109,8 +109,8 @@ const FormVotos = () => {
             
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
-                            <p className={styles.n}>503</p>
-                            <p className={styles.agrupacion}>FRENTE DE IZQUIERDA Y DE TRABJADORES-UNIDAD</p>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>UP Massa</p>
                         </div>
                         <div className={styles.boxFormInput}>
                             <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
@@ -127,8 +127,217 @@ const FormVotos = () => {
                             />
                         </div>
                     </div>
-            
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>UP Grabois</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Libertad Milei</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Hacemos Schiaretti</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
                     
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Frente de Izquierda Bregman</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Frente de Izquierda Solano</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Mas Castañeira</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Política Obrera Ramal</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Libres Escobar</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Valores Moreno</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Frente Patriota Biondini</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="votosFrenteIzquierda" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="votosFrenteIzquierda"
+                                name="votosFrenteIzquierda"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
                     <div className={styles.boxForm}>
                         <label className={styles.labelStyle}>Votos Nulos</label>
                         <input
