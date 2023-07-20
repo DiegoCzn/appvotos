@@ -243,7 +243,7 @@ const FormVotos = () => {
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
                             {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Unidad de luchadores y la izquierda</p>
+                            <p className={styles.agrupacionTitulo}>Unidad de luchadores y la izquierda</p>
                             <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
                             <p className={styles.agrupacionCandidatos}> Betina Rivero, Luis Carrillo y Patricia Amante</p>
                         </div>
@@ -266,7 +266,7 @@ const FormVotos = () => {
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
                             {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Frente de Izquierda y los Trabajadores-Unidad (FITU)</p>
+                            <p className={styles.agrupacionTitulo}>Frente de Izquierda y los Trabajadores-Unidad (FITU)</p>
                             <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
                             <p className={styles.agrupacionCandidatos}> Natalia Morales, Ivan Blacutt (IS) y Andrea Gutiérrez</p>
                         </div>
