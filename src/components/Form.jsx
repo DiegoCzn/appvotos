@@ -9,19 +9,14 @@ const FormVotos = () => {
     const fiscal = location.state
 
     const [votos, setVotos] = useState({
-        votosJxCBulrrich: 0,
-        votosJxCLarreta: 0,
-        votosUPMassa: 0,
-        votosUPGrabois: 0,
-        votosLibertadMilei: 0,
-        votosHacemosSchiarretti: 0,
-        votosFrenteDeIzquierdaBregman: 0,
-        votosFrenteDeIzquierdaSolano: 0,
-        votosMasCastañeira: 0,
-        votosPoliticaObreraRamal: 0,
-        votosLibreEscobar: 0,
-        votosValoresMoreno: 0,
-        votosFrentePatriotaBiondini:0,
+        juntosPorElCambio1: 0,
+        fuerzaDelCambio: 0,
+        unionPorLaPatria: 0,
+        unidadRenovadora: 0,
+        hacemosPorNuestroPais: 0,
+        libertadAvanza: 0,
+        unidadDeLuchadores: 0,
+        fitu: 0,
         votosNulos: 0,
         votosRecurridos: 0,
         votosIdentidadImpugnada: 0,
@@ -76,123 +71,23 @@ const FormVotos = () => {
             </div>
             <form onSubmit={handleSubmit}>
                 <div className={styles.agrupacionesContainer}>
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>N Lista</p> */}
-                            <p className={styles.agrupacion}>JxC Bullrich</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosJxCBulrrich" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosJxCBulrrich"
-                                name="votosJxCBulrrich"
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-            
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>502</p> */}
-                            <p className={styles.agrupacion}>JxC Larreta</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosJxCLarreta" className={styles.labelStyle}>
-                            Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosJxCLarreta"
-                                name="votosJxCLarreta"
-                                // value={votos.votosFrenteCambiaJujuy}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-            
+                    
+                    {/* Lista 1 de juntos por el cambio */}
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
                             {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>UP Massa</p>
+                            <p className={styles.agrupacionTitulo}> Lista 1 de Juntos por el Cambio </p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Jorge Rizzotti, Claudia Machaca y Félix Pérez</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosUPMassa" className={styles.labelStyle}>
+                            <label htmlFor="juntosPorElCambio1" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosUPMassa"
-                                name="votosUPMassa"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>UP Grabois</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosUPGrabois" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosUPGrabois"
-                                name="votosUPGrabois"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Libertad Milei</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosLibertadMilei" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosLibertadMilei"
-                                name="votosLibertadMilei"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Hacemos Schiaretti</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosHacemosSchiarretti" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosHacemosSchiarretti"
-                                name="votosHacemosSchiarretti"
+                                id="juntosPorElCambio1"
+                                name="juntosPorElCambio1"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -201,19 +96,165 @@ const FormVotos = () => {
                         </div>
                     </div>
                     
+                    {/* Lista 2 de juntos por el cambio ********** */}
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
                             {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Frente de Izquierda Bregman</p>
+                            <p className={styles.agrupacion}>Lista 2 de Juntos por el Cambio - "Fuerza del Cambio"</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Rosario Agostini y Santiago Imposte</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteDeIzquierdaBregman" className={styles.labelStyle}>
+                            <label htmlFor="fuerzaDelCambio" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteDeIzquierdaBregman"
-                                name="votosFrenteDeIzquierdaBregman"
+                                id="fuerzaDelCambio"
+                                name="fuerzaDelCambio"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Union Por la patria */}
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>N Lista</p> */}
+                            <p className={styles.agrupacionTitulo}>Unión por la Patria</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Nilson Ortega, Mariela Segovia y Luis Moreno</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="unionPorLaPatria" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="unionPorLaPatria"
+                                name="unionPorLaPatria"
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Lista Unidad Renovadora */}
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>502</p> */}
+                            <p className={styles.agrupacionTitulo}>Lista Unidad Renovadora</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Guillermo Snopek, Amelia de Dios y Cristian Lettier</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="unidadRenovadora" className={styles.labelStyle}>
+                            Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="unidadRenovadora"
+                                name="unidadRenovadora"
+                                // value={votos.votosFrenteCambiaJujuy}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+                    
+                    {/* Hacemos por Nuestro País */}
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacionTitulo}>Hacemos Por Nuestro País</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Hugo Horvart y Claudia Sánchez</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="hacemosPorNuestroPais" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="hacemosPorNuestroPais"
+                                name="hacemosPorNuestroPais"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+                    
+                    {/* La Libertad Avanza  */}
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacionTitulo}>La Libertad Avanza - Partido Renovador Federal</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Manuel Quintar y Claudia Neme Scheij</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="libertadAvanza" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="libertadAvanza"
+                                name="libertadAvanza"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Union Por la Patria */}
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacionTitulo}> Unión por la Patria en Jujuy ( La Unidad Peronista, massista y kirchnerista)</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Alejandro Snopek</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="unionPorLaPatria" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="unionPorLaPatria"
+                                name="unionPorLaPatria"
+                                // value={votos.votosFrenteIzquierda}
+                                onChange={handleInputChange}
+                                className={styles.inputStyle}
+                                placeholder="0"
+                            />
+                        </div>
+                    </div>
+
+
+                    <div className={styles.boxForm}>
+                        <div className={styles.dataAgrupacionContainer}>
+                            {/* <p className={styles.n}>503</p> */}
+                            <p className={styles.agrupacion}>Unidad de luchadores y la izquierda</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Betina Rivero, Luis Carrillo y Patricia Amante</p>
+                        </div>
+                        <div className={styles.boxFormInput}>
+                            <label htmlFor="unidadDeLuchadores" className={styles.labelStyle}>
+                                Cantidad de votos obtenidos
+                            </label>
+                            <input
+                                type="text"
+                                id="unidadDeLuchadores"
+                                name="unidadDeLuchadores"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -225,121 +266,18 @@ const FormVotos = () => {
                     <div className={styles.boxForm}>
                         <div className={styles.dataAgrupacionContainer}>
                             {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Frente de Izquierda Solano</p>
+                            <p className={styles.agrupacion}>Frente de Izquierda y los Trabajadores-Unidad (FITU)</p>
+                            <p className={styles.agrupacion}> Precandidatos a Diputados Nacionales</p>
+                            <p className={styles.agrupacionCandidatos}> Natalia Morales, Ivan Blacutt (IS) y Andrea Gutiérrez</p>
                         </div>
                         <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrenteDeIzquierdaSolano" className={styles.labelStyle}>
+                            <label htmlFor="fitu" className={styles.labelStyle}>
                                 Cantidad de votos obtenidos
                             </label>
                             <input
                                 type="text"
-                                id="votosFrenteDeIzquierdaSolano"
-                                name="votosFrenteDeIzquierdaSolano"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Mas Castañeira</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosMasCastañeira" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosMasCastañeira"
-                                name="votosMasCastañeira"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Política Obrera Ramal</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosPoliticaObreraRamal" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosPoliticaObreraRamal"
-                                name="votosPoliticaObreraRamal"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Libres Escobar</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosLibreEscobar" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosLibreEscobar"
-                                name="votosLibreEscobar"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Valores Moreno</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosValoresMoreno" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosValoresMoreno"
-                                name="votosValoresMoreno"
-                                // value={votos.votosFrenteIzquierda}
-                                onChange={handleInputChange}
-                                className={styles.inputStyle}
-                                placeholder="0"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.boxForm}>
-                        <div className={styles.dataAgrupacionContainer}>
-                            {/* <p className={styles.n}>503</p> */}
-                            <p className={styles.agrupacion}>Frente Patriota Biondini</p>
-                        </div>
-                        <div className={styles.boxFormInput}>
-                            <label htmlFor="votosFrentePatriotaBiondini" className={styles.labelStyle}>
-                                Cantidad de votos obtenidos
-                            </label>
-                            <input
-                                type="text"
-                                id="votosFrentePatriotaBiondini"
-                                name="votosFrentePatriotaBiondini"
+                                id="fitu"
+                                name="fitu"
                                 // value={votos.votosFrenteIzquierda}
                                 onChange={handleInputChange}
                                 className={styles.inputStyle}
@@ -359,6 +297,7 @@ const FormVotos = () => {
                             placeholder="0"
                         />
                     </div>
+
                     <div className={styles.boxForm}>
                         <label className={styles.labelStyle}>Votos Recurridos</label>
                         <input
